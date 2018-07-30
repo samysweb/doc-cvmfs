@@ -79,6 +79,8 @@ CVMFS_SYSTEMD_NOKILL            If set to *yes*, modify the command line to ``@v
 CVMFS_TIMEOUT                   Timeout in seconds for HTTP requests with a proxy server.
 CVMFS_TIMEOUT_DIRECT            Timeout in seconds for HTTP requests without a proxy server.
 CVMFS_TRACEFILE                 If set, enables the tracer and trace file system calls to the given file.
+CVMFS_TRACEBUFFER               Size of the ringbuffer used for storing the tracing events (only active if tracer is activated)
+CVMFS_TRACEBUFFEER_THRESHOLD    Minimum number of events stored in the buffer so the storing thread will be activated to flush the buffer
 CVMFS_USE_GEOAPI                Request order of Stratum 1 servers and fallback proxies via Geo-API.
 CVMFS_USER                      Sets the ``gid`` and ``uid`` mount options. Don't touch or overwrite.
 CVMFS_USYSLOG                   All messages that normally are logged to syslog are re-directed to the given file.  This file can grow up to 500kB and there is one step of log rotation.  Required for $\mu$CernVM.

@@ -11,3 +11,5 @@ Advanced Topics
    cpt-xcache
    cpt-large-scale
    cpt-details
+   cpt-tracer
+   cpt-shrinkwrapping
